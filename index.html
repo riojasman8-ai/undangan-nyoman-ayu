@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6efe4">
+<title>Nyoman Wiswara & Made Ayu Intan — Wedding Invitation</title>
+<style>
+:root{--cream:#f6efe4;--paper:#fffaf3;--gold:#b2935c;--gold2:#d8c39d;--ink:#594733;--muted:#87765e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+button,input,textarea{font:inherit}.wrap{max-width:480px;margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 0 35px #7b65401c}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 24px;position:relative;overflow:hidden;background:linear-gradient(#fffaf3e8,#fffaf3ed),radial-gradient(ellipse at top,#e8d8b8,transparent 65%)}
+.hero:before,.hero:after{content:"❧";position:absolute;color:#c7ad7b;font-size:78px;opacity:.6}.hero:before{top:14px;left:12px;transform:rotate(-35deg)}.hero:after{bottom:14px;right:12px;transform:rotate(145deg)}
+.frame{border:1px solid var(--gold2);outline:1px solid #d8c39d70;outline-offset:6px;padding:38px 18px;width:100%;max-width:360px}
+.eyebrow{font:11px/1.7 Arial,sans-serif;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+h1{font-size:clamp(31px,8vw,42px);font-weight:normal;line-height:1.13;margin:18px 0 8px} .amp{font-size:30px;color:var(--gold);font-style:italic;margin:4px 0}
+.date{letter-spacing:2px;font:13px Arial,sans-serif;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;background:var(--gold);color:white;padding:13px 20px;border-radius:30px;text-decoration:none;font:13px Arial,sans-serif;letter-spacing:.4px;cursor:pointer}
+section{padding:38px 22px;text-align:center}.section-kicker{font:10px Arial,sans-serif;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase}h2{font-size:27px;font-weight:normal;margin:10px 0 14px}.intro{font-size:15px;line-height:1.8;color:#766650}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:22px 0}.tile{border:1px solid var(--gold2);border-radius:12px;padding:13px 2px;background:#fffdf9}.num{font:25px Arial,sans-serif;color:#967746}.unit{font:9px Arial,sans-serif;letter-spacing:1px;color:var(--muted);margin-top:5px}
+.card{background:#fffdf9;border:1px solid #e6d9c3;border-radius:16px;padding:22px 15px;margin-top:16px}.line{width:54px;height:1px;background:var(--gold2);margin:15px auto}.detail{font:14px/1.8 Arial,sans-serif;color:#75644c}.map-btn{margin-top:14px}.qr{width:190px;height:190px;max-width:100%;border:8px solid white;box-shadow:0 0 0 1px #e4d6bd;border-radius:8px}.small{font:12px/1.6 Arial,sans-serif;color:var(--muted)}
+form{display:grid;gap:12px;text-align:left}label{font:12px Arial,sans-serif;color:var(--muted)}input,textarea,select{width:100%;padding:12px;border:1px solid #dfd0b5;border-radius:10px;background:#fffdfa;color:var(--ink);margin-top:6px}textarea{min-height:88px;resize:vertical}.field{display:block}.footer{padding:28px 20px;text-align:center;background:#f0e6d7;color:#806a4b;font-size:12px;line-height:1.8}.music-btn{position:fixed;right:max(14px,calc((100vw - 480px)/2 + 14px));bottom:16px;border:1px solid var(--gold2);border-radius:50%;width:48px;height:48px;background:#fffaf3;color:#8e7042;box-shadow:0 3px 15px #0001;font-size:18px;cursor:pointer;z-index:4}.guest{border-bottom:1px solid #eadfcd;padding:12px 0;text-align:left;font:13px/1.6 Arial,sans-serif}.guest strong{color:#84673a}.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero" id="top"><div class="frame">
+    <div class="eyebrow">The Wedding Of</div>
+    <h1>Nyoman Wiswara</h1><div class="amp">&amp;</div><h1>Made Ayu Intan</h1>
+    <div class="line"></div>
+    <div class="date">SABTU · 17 APRIL 2027</div>
+    <p class="intro">Dengan penuh rasa syukur, kami mengundang Anda untuk menjadi bagian dari hari bahagia kami.</p>
+    <a class="btn" href="#undangan">Buka Undangan ↓</a>
+  </div></header>
+  <section id="undangan">
+    <div class="section-kicker">Dengan penuh kasih</div><h2>Om Swastyastu, Salam Sejahtera Bagi Kita Semua</h2>
+    <p class="intro">Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada hari pernikahan kami.</p>
+  </section>
+  <section style="background:#f7f0e6">
+    <div class="section-kicker">Save The Date</div><h2>Menuju Hari Bahagia</h2>
+    <div class="countdown" aria-label="Hitung mundur">
+      <div class="tile"><div class="num" id="days">—</div><div class="unit">HARI</div></div>
+      <div class="tile"><div class="num" id="hours">—</div><div class="unit">JAM</div></div>
+      <div class="tile"><div class="num" id="minutes">—</div><div class="unit">MENIT</div></div>
+      <div class="tile"><div class="num" id="seconds">—</div><div class="unit">DETIK</div></div>
+    </div>
+    <p class="small">Hitung mundur menuju 17 April 2027. Jam acara belum ditentukan; hitungan sementara menuju pukul 00.00 WITA.</p>
+  </section>
+  <section>
+    <div class="section-kicker">Tempat Acara</div><h2>Taman Prakerti Bhuana</h2>
+    <div class="card">
+      <div class="detail">Beng, Kecamatan Gianyar<br>Kabupaten Gianyar, Bali 80513</div>
+      <div class="line"></div>
+      <a class="btn map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Taman+Prakerti+Bhuana%2C+Beng%2C+Gianyar%2C+Bali">Buka Google Maps ↗</a>
+      <p class="small">Pindai QR Code di bawah untuk membuka lokasi di Google Maps.</p>
+      <img class="qr" id="qr" alt="QR Code lokasi Taman Prakerti Bhuana" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DTaman%2BPrakerti%2BBhuana%252C%2BBeng%252C%2BGianyar%252C%2BBali">
+    </div>
+  </section>
+  <section style="background:#f7f0e6">
+    <div class="section-kicker">Konfirmasi Kehadiran</div><h2>RSVP</h2>
+    <p class="small">Cinta menyatukan dua hati, dan hari ini kami memulai perjalanan baru bersama. Jadilah bagian dari cerita kebahagiaan kami dengan menghadiri hari istimewa ini.</p>
+    <div class="card"><form id="rsvpForm">
+      <label class="field">Nama lengkap<input id="rsvpName" required placeholder="Nama Anda"></label>
+      <label class="field">Konfirmasi kehadiran<select id="attendance"><option value="Hadir">Hadir</option><option value="Tidak hadir">Mohon maaf, tidak dapat hadir</option></select></label>
+      <label class="field">Jumlah tamu<select id="guestCount"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+      <button class="btn" type="submit">Siapkan Konfirmasi</button>
+      <div id="rsvpResult" class="small" role="status"></div>
+    </form></div>
+  </section>
+  <section>
+    <div class="section-kicker">Doa &amp; Ucapan</div><h2>Buku Tamu</h2>
+    <p class="small">Setiap doa dan ucapan yang Anda berikan menjadi kenangan indah bagi kami. Terima kasih atas doa dan restunya..</p>
+    <div class="card"><form id="guestForm">
+      <label class="field">Nama<input id="guestName" required placeholder="Nama Anda"></label>
+      <label class="field">Ucapan dan doa<textarea id="guestMessage" required placeholder="Tuliskan doa terbaik untuk kedua mempelai..."></textarea></label>
+      <button class="btn" type="submit">Tambahkan Ucapan</button>
+    </form><div id="guestList"></div></div>
+  </section>
+  <footer class="footer"><div class="section-kicker">Terima Kasih</div><h2 style="font-size:23px">Nyoman Wiswara Putra adnyana ST.MT &amp; dr.Made Ayu Intan Winayati Oka,Sp.A</h2>Merupakan suatu kehormatan dan kebahagiaan bagi kami atas doa restu Anda.</footer>
+</div>
+<button class="music-btn" id="musicBtn" aria-label="Putar musik" title="Putar musik">♫</button>
+<script>
+const target = new Date('2027-04-17T00:00:00+08:00').getTime();
+function updateCountdown(){
+ let diff=Math.max(0,target-Date.now());
+ const d=Math.floor(diff/86400000); diff%=86400000;
+ const h=Math.floor(diff/3600000); diff%=3600000;
+ const m=Math.floor(diff/60000); const s=Math.floor((diff%60000)/1000);
+ document.getElementById('days').textContent=d;
+ document.getElementById('hours').textContent=String(h).padStart(2,'0');
+ document.getElementById('minutes').textContent=String(m).padStart(2,'0');
+ document.getElementById('seconds').textContent=String(s).padStart(2,'0');
+}
+updateCountdown();setInterval(updateCountdown,1000);
+const rsvpForm=document.getElementById('rsvpForm');
+rsvpForm.addEventListener('submit',e=>{
+ e.preventDefault();
+ const data=`RSVP Pernikahan Nyoman Wiswara & Made Ayu Intan\nNama: ${document.getElementById('rsvpName').value}\nKehadiran: ${document.getElementById('attendance').value}\nJumlah tamu: ${document.getElementById('guestCount').value}`;
+ 
+const nomorWA = "6287866801925";
+
+const urlWA = "https://wa.me/" + nomorWA +
+  "?text=" + encodeURIComponent(data);
+
+window.open(urlWA, "_blank");
+
+document.getElementById('rsvpResult').textContent =
+  "Silakan kirim konfirmasi melalui WhatsApp.";
+
+});
+function renderGuests(){
+ const list=document.getElementById('guestList');list.innerHTML='';
+ const entries=JSON.parse(localStorage.getItem('weddingGuestsNWMAI')||'[]');
+ entries.slice().reverse().forEach(g=>{const div=document.createElement('div');div.className='guest';const strong=document.createElement('strong');strong.textContent=g.name;const p=document.createElement('div');p.textContent=g.message;div.append(strong,p);list.append(div);});
+}
+document.getElementById('guestForm').addEventListener('submit',e=>{
+ e.preventDefault();const entries=JSON.parse(localStorage.getItem('weddingGuestsNWMAI')||'[]');
+ entries.push({name:document.getElementById('guestName').value,message:document.getElementById('guestMessage').value});
+ localStorage.setItem('weddingGuestsNWMAI',JSON.stringify(entries));e.target.reset();renderGuests();
+});
+renderGuests();
+// A gentle synthesized tone; browser audio begins only after the visitor taps the music button.
+let audioCtx=null,osc=null,gain=null,musicOn=false,timer=null,step=0;
+const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
+function playNote(){
+ if(!musicOn||!audioCtx)return;
+ if(osc){try{osc.stop()}catch(e){}}
+ osc=audioCtx.createOscillator();gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=notes[step%notes.length];
+ gain.gain.setValueAtTime(0.0001,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(0.035,audioCtx.currentTime+0.06);gain.gain.exponentialRampToValueAtTime(0.0001,audioCtx.currentTime+0.55);
+ osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+0.58);step++;
+}
+document.getElementById('musicBtn').addEventListener('click',async()=>{
+ if(!musicOn){audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();await audioCtx.resume();musicOn=true;document.getElementById('musicBtn').textContent='Ⅱ';playNote();timer=setInterval(playNote,650);}
+ else{musicOn=false;clearInterval(timer);document.getElementById('musicBtn').textContent='♫';}
+});
+</script>
+</body>
+</html>
